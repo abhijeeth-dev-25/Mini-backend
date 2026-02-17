@@ -141,6 +141,27 @@ http://localhost:5000
 
 ---
 
+### 3️⃣ Get All Products
+
+**GET** `/api/products`
+
+**Who can access**: Public (No authentication required)
+
+**Success Response (200):**
+```json
+[
+  {
+    "id": "65f1a2b3c4d5e6f7g8h9i0j1",
+    "name": "Gaming Laptop",
+    "price": 1500,
+    "createdBy": "user_id_here"
+  },
+  ...
+]
+```
+
+---
+
 ## 🔒 Protected Endpoints (Authentication Required)
 
 > **How to authenticate**: Add this header to all requests below:
@@ -328,6 +349,7 @@ Replace `:id` with the actual product ID.
 | Register/Login | ✅ | ✅ | ✅ |
 | Get My Profile | ✅ | ✅ | ✅ |
 | Get All Users | ❌ | ❌ | ✅ |
+| Get All Products | ✅ | ✅ | ✅ |
 | Create Product | ❌ | ✅ | ✅ |
 | Delete Product | ❌ | ❌ | ✅ |
 

@@ -2,7 +2,7 @@
   "name": "mini-backend",
   "version": "1.0.0",
   "description": "hi",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js"

@@ -677,6 +677,7 @@ const { protect } = require('../middlewares/auth.middleware');
 const { authorize } = require('../middlewares/rbac.middleware');
 
 // Middleware chain: auth → authorization → controller
+router.get('/', getAllProducts); // Public route
 router.post('/', protect, authorize('admin', 'manager'), createProduct);
 router.delete('/:id', protect, authorize('admin'), deleteProduct);
 
