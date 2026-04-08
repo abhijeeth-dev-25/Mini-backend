@@ -427,6 +427,4 @@ If you encounter any issues:
 3. Verify your `.env` file is configured correctly
 4. Check that you're using the correct HTTP methods and URLs
 
----
-
 
